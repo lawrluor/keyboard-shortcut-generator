@@ -1,0 +1,49 @@
+/* Think of 14.5 as total width of each key row */
+
+.keybox-container {
+	flex: 1;
+	display: flex;
+	border-radius: 20px;  /* Should Scale */
+	background-color: white;
+	color: #616161;
+	height: 50px;  /* Should Scale */
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.text {
+	text-align: left;
+
+}
+
+.square {
+	flex: 1;
+	aspect-ratio: 1;
+	background-color: aqua;
+}
+
+.rect1 {
+	flex: 1.5;
+	background-color: green;
+}
+
+.rect2 {
+	flex: 1.75;  /* 14.5 - 11 = 3.5 / 2 leftover, 2 equal size buttons */
+	background-color: blue;
+}
+
+.rect3 {
+	flex: 2.25;  /* 14.5 - 10 = 4.5 / 2 leftover, 2 equal size buttons */
+	background-color: pink;
+}
+
+.cmd {
+	flex: 1.25;
+	background-color: purple;
+}
+
+/* 7 in this row */
+.space {
+	flex: 5; /* 14.5 - 7 = 7.5 - 1.25 * 2 = 5 */
+	background-color: dimgray;
+}
